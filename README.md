@@ -1,127 +1,89 @@
-Sparse Matrix Operations
-This Java program performs addition, subtraction, and multiplication on sparse matrices loaded from input files. The matrices are represented using a custom data structure to optimize memory usage and runtime performance.
+# Sparse Matrix Operations
 
-Directory Structure
-Organize the project files as follows:
+This project provides a Java implementation for handling sparse matrices and performing matrix operations such as addition, subtraction, and multiplication.
 
-css
-Copy code
-/dsa/sparse_matrix/
-  ├── code/
-  │   └── src/
-  │       └── Matrix.java
-  │       └── Code.java
-  ├── sample_inputs/
-  │       └── easy_sample_01_1.txt
-  │       └── easy_sample_01_2.txt
-  │       └── easy_sample_01_3.txt
-  │       └── easy_sample_02_1.txt
-  │       └── easy_sample_02_2.txt
-  │       └── easy_sample_02_3.txt
-  │       └── easy_sample_03_1.txt
-  │       └── easy_sample_03_2.txt
-  │       └── easy_sample_03_3.txt
-  │       └── easy_sample_04_1.txt
-  │       └── easy_sample_04_2.txt
-  │       └── easy_sample_04_3.txt
-  └── sample_results/
-Setup
-Ensure you have Java installed on your system.
+## Directory Structure
 
-Navigate to the source directory:
+/DsMatrix
+├──spaMatrix
+│ └── Matrix.java
+│ └── Code.java
+├── sample_inputs/
+└── sample_results/
 
-bash
-Copy code
-cd /dsa/sparse_matrix/code/src/
-Compile the Java programs:
+## How to Compile and Run
 
-bash
-Copy code
-javac Matrix.java Code.java
-Running the Program
-Execute the program:
+### Prerequisites
 
-bash
-Copy code
-java Code
-Follow the prompts:
+- Java Development Kit (JDK) installed on your system.
+- Ensure the `sample_inputs` directory contains the input files.
 
-Enter the path of the first matrix file:
+### Compilation
 
-bash
-Copy code
-/dsa/sparse_matrix/sample_inputs/easy_sample_01_1.txt
-Enter the path of the second matrix file:
+1. Navigate to the source code directory:
+    ```bash
+    cd /dsa/sparse_matrix/code/src/
+    ```
 
-bash
-Copy code
-/dsa/sparse_matrix/sample_inputs/easy_sample_01_2.txt
-Select the operation (add, subtract, multiply):
+2. Compile the Java files:
+    ```bash
+    javac Matrix.java Code.java
+    ```
 
-csharp
-Copy code
-add
-The program will display the resultant matrix.
+### Running the Program
 
-Input File Format
-Each input file should follow this format:
+1. Run the program:
+    ```bash
+    java Code
+    ```
 
-php
-Copy code
-rows=<number_of_rows>
-cols=<number_of_columns>
-(<row_index>, <col_index>, <value>)
-(<row_index>, <col_index>, <value>)
-...
-Example:
-easy_sample_01_1.txt:
+2. Follow the prompts to enter the paths of the matrix files and select the operation to perform (add, subtract, multiply).
 
-scss
-Copy code
-rows=3
-cols=3
-(0, 0, 1)
-(0, 2, 2)
-(1, 1, 3)
-easy_sample_01_2.txt:
+### Sample Input Files
 
-scss
-Copy code
-rows=3
-cols=3
-(0, 1, 4)
-(1, 2, 5)
-(2, 0, 6)
-Operations
-Addition: Adds corresponding elements of two matrices.
-Subtraction: Subtracts corresponding elements of the second matrix from the first matrix.
-Multiplication: Multiplies two matrices following matrix multiplication rules.
-Error Handling
-The program checks for valid input formats and throws an IllegalArgumentException if the input file format is incorrect.
-The program ensures that matrix dimensions are compatible for the selected operations and throws appropriate exceptions for mismatched dimensions.
-Example Run
-bash
-Copy code
-java Code
-sql
-Copy code
-Enter the path of the first matrix file:
-/dsa/sparse_matrix/sample_inputs/easy_sample_01_1.txt
-Enter the path of the second matrix file:
-/dsa/sparse_matrix/sample_inputs/easy_sample_01_2.txt
-Select operation (add, subtract, multiply):
-add
-Resultant matrix:
-(0, 0, 1)
-(0, 1, 4)
-(0, 2, 2)
-(1, 1, 3)
-(1, 2, 5)
-(2, 0, 6)
-This README provides the necessary instructions to compile, run, and understand the program and its input file format.
+Sample input files are placed in the `sample_inputs` directory. 
 
 
+### Operations
 
+The program supports the following operations:
 
+- **Addition**: Adds two matrices.
+- **Subtraction**: Subtracts the second matrix from the first matrix.
+- **Multiplication**: Multiplies two matrices.
 
+### Example Usage
 
+1. Start the program:
+    ```bash
+    java Code
+    ```
+
+2. Enter the path to the first matrix file when prompted:
+    ```
+    Enter the path of the first matrix file:
+    /dsa/sparse_matrix/sample_inputs/easy_sample_01_1.txt
+    ```
+
+3. Enter the path to the second matrix file when prompted:
+    ```
+    Enter the path of the second matrix file:
+    /dsa/sparse_matrix/sample_inputs/easy_sample_01_2.txt
+    ```
+
+4. Choose the operation:
+    ```
+    Select operation (add, subtract, multiply):
+    add
+    ```
+
+5. The resultant matrix will be printed on the console.
+
+## Error Handling
+
+- The program throws an `IllegalArgumentException` if the input file has the wrong format.
+- The program ensures matrix dimensions are compatible for the chosen operations and throws an `IllegalArgumentException` if they are not.
+
+## Author
+
+Done by Lina IRATWE
