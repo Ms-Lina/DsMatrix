@@ -12,9 +12,11 @@ This project provides a Java implementation for handling sparse matrices and per
 
 │ └── Code.java
 
-├── sample_inputs/
+├── hw02
 
-└── sample_results/
+    └── sample_inputs/
+
+    └── sample_results/
 
 ## How to Compile and Run
 
