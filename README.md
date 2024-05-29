@@ -5,10 +5,15 @@ This project provides a Java implementation for handling sparse matrices and per
 ## Directory Structure
 
 /DsMatrix
+
 ├──spaMatrix
+
 │ └── Matrix.java
+
 │ └── Code.java
+
 ├── sample_inputs/
+
 └── sample_results/
 
 ## How to Compile and Run
